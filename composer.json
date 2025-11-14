@@ -1,0 +1,45 @@
+{
+  "name": "kosmosafive/kosmosafive.cbrrates",
+  "description": "Курсы валют ЦБ РФ",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/kosmosafive/kosmosafive.cbrrates",
+  "type": "bitrix-d7-module",
+  "minimum-stability": "stable",
+  "keywords": [
+    "bitrix",
+    "rdn",
+    "cbr",
+    "currency",
+    "rate",
+    "api"
+  ],
+  "authors": [
+    {
+      "name": "Siarhei Buinevich",
+      "email": "a5-kosmos@yandex.ru",
+      "homepage": "https://t.me/kosmosafive",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "php": ">=8.3",
+    "kosmosafive/bitrix-ds": "^1.4",
+    "kosmosafive/bitrix-diag": "^1.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpstan/phpstan": "^2.1",
+    "rector/rector": "^2.2",
+    "lendable/composer-license-checker": "^1.2",
+    "shipmonk/composer-dependency-analyser": "^1.8",
+    "friendsofphp/php-cs-fixer": "^3.89",
+    "monolog/monolog": "^3.9"
+  },
+  "scripts": {
+    "analyse": "vendor/bin/phpstan analyse -c phpstan.neon --ansi",
+    "rector:dry-run": "vendor/bin/rector process --config rector.php --dry-run --clear-cache --ansi",
+    "rector:process": "vendor/bin/rector process --config rector.php --clear-cache --ansi",
+    "license:check": "vendor/bin/composer-license-checker --allow-file .allowed-licenses.php --ansi",
+    "dependency:check": "vendor/bin/composer-dependency-analyser --config composer-dependency-analyser.php"
+  }
+}
