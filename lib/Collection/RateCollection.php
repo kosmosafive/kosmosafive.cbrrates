@@ -31,7 +31,7 @@ final class RateCollection extends Collection implements ReturnPrototypeInterfac
             throw new InvalidArgumentException("This collection only accepts instances of " . Rate::class);
         }
 
-        return $this;
+        return parent::add($value);
     }
 
     /**
