@@ -26,7 +26,7 @@ final class CurrencyCollection extends Collection implements ReturnPrototypeInte
             throw new InvalidArgumentException("This collection only accepts instances of " . Currency::class);
         }
 
-        return $this;
+        return parent::add($value);
     }
 
     public static function createFromResponse(ResponseInterface $response): CurrencyCollection
