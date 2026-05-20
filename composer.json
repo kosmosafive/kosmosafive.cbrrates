@@ -22,18 +22,18 @@
     }
   ],
   "require": {
-    "php": ">=8.3",
-    "kosmosafive/bitrix-ds": "^1.4",
-    "kosmosafive/bitrix-diag": "^1.1"
+    "php": ">=8.4",
+    "kosmosafive/bitrix-ds": "^1.6",
+    "kosmosafive/bitrix-diag": "^2.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
     "phpstan/phpstan": "^2.1",
-    "rector/rector": "^2.2",
-    "lendable/composer-license-checker": "^1.2",
+    "rector/rector": "^2.4",
+    "lendable/composer-license-checker": "^1.4",
     "shipmonk/composer-dependency-analyser": "^1.8",
-    "friendsofphp/php-cs-fixer": "^3.89",
-    "monolog/monolog": "^3.9"
+    "friendsofphp/php-cs-fixer": "^3.95",
+    "monolog/monolog": "^3.10"
   },
   "scripts": {
     "analyse": "vendor/bin/phpstan analyse -c phpstan.neon --ansi",
