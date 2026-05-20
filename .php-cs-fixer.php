@@ -19,7 +19,7 @@ return (new PhpCsFixer\Config())
     ->setRiskyAllowed(true)
     ->setRules(
         [
-            '@PHP83Migration' => true,
+            '@PHP84Migration' => true,
             '@PSR12' => true,
             'array_syntax' => ['syntax' => 'short'],
             'blank_line_after_namespace' => true,
